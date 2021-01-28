@@ -219,6 +219,7 @@ dfn, cite {
     max-height: 555px;
     text-align: justify;
     font-family: Poppins;
+    line-height: 20px;
 }
 
 div::-webkit-scrollbar {
@@ -343,7 +344,7 @@ div::-webkit-scrollbar-thumb {
     opacity: 1;
     margin-top: -40px;
     visibility: visible;
-    transition-delay: 0.3s;
+    transition-delay: 0.5s;
 }
 
 .customerBg_img {
@@ -442,8 +443,6 @@ div::-webkit-scrollbar-thumb {
     color: white;
     font-size: 14px;
     margin-top: 14px;
-    text-align: center;
-    font-family: OpenSans;
 }
 
 #myBtn {
