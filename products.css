@@ -118,16 +118,6 @@ nav.scrolled .toggle a:hover {
     background-image: url("Images/productsbanner.jpg");
 }
 
-.slider .imgBox img {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    object-fit: cover;
-    position: absolute;
-}
-
 .slider .imgBox .content h1 {
     width: 400px;
     padding: 20px;
@@ -185,6 +175,7 @@ nav.scrolled .toggle a:hover {
 }
 
 table {
+    z-index: 1;
     max-width: 90%;
     margin: 120px auto;
     max-height: fit-content;
@@ -437,10 +428,10 @@ th, td {
         zoom: 72%;
     }
     .customerDesc h2 {
-        font-size: 28px;
+        font-size: 32px;
     }
     .customerDesc p {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -455,10 +446,3 @@ th, td {
         zoom: 30%;
     }
 }
-
-
-
-
-
-
-

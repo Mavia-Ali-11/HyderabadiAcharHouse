@@ -20,6 +20,41 @@ function topFunction() {
 
 
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function mySlider() {
+  var slide1 = document.getElementById('slide1');
+  var slide2 = document.getElementById('slide2');
+  var slide3 = document.getElementById('slide3');
+  var slide4 = document.getElementById('slide4');
+  var slide5 = document.getElementById('slide5');
+
+
+setInterval(
+  function(){ 
+    if(slide1.checked == true) {
+      slide1.checked = false;
+      slide2.checked = true;
+    }
+    else if(slide2.checked == true) {
+      slide2.checked = false;
+      slide3.checked = true;
+    }
+    else if(slide3.checked == true) {
+      slide3.checked = false;
+      slide4.checked = true;
+    }
+    else if(slide4.checked == true) {
+      slide4.checked = false;
+      slide5.checked = true;
+    }
+    else {
+      slide5.checked = false;
+      slide1.checked = true;
+    }
+}, 5000);
+}
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -37,6 +72,12 @@ function openImage(img,caption) {
 function closeImg() {
   modal.style.display = 'none';
 }
+
+
+
+
+
+
 
 
 

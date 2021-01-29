@@ -115,17 +115,8 @@ nav.scrolled .toggle a:hover {
     justify-content: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url("Images/clippedimage3.jpg");
-}
-
-.slider .imgBox img {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-    object-fit: cover;
-    position: absolute;
+    background-color: lavender;
+    background-image: url("Images/contactus.jpg");
 }
 
 .slider .imgBox .content h1 {
@@ -171,7 +162,7 @@ nav.scrolled .toggle a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url("Images/example9.jpg");
+    background-image: url("Images/clippedimage4.jpg");
 }
 
 .customerDesc {
@@ -328,6 +319,12 @@ nav.scrolled .toggle a:hover {
 }
 
 @media only screen and (max-width: 770px){
+    #strip {
+        background-color: whitesmoke;
+    }
+    nav.scrolled #strip {
+        background-color: transparent;
+    }
     #footer {
         padding-bottom: 60px !important;
     }
