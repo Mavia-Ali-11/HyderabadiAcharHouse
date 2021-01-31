@@ -115,7 +115,7 @@ nav.scrolled .toggle a:hover {
     justify-content: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url("Images/productsbanner.jpg");
+    background-image: url('Images/clippedimage1.jpg');
 }
 
 .slider .imgBox .content h1 {
@@ -177,7 +177,7 @@ nav.scrolled .toggle a:hover {
 table {
     z-index: 1;
     max-width: 90%;
-    margin: 120px auto;
+    margin: 80px auto;
     max-height: fit-content;
     border-collapse: collapse;
     box-shadow: 0px 5px 10px lightgray;

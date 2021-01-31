@@ -217,9 +217,9 @@ dfn, cite {
     overflow: auto;
     font-size: 14px;
     max-height: 555px;
+    line-height: 20px;
     text-align: justify;
     font-family: Poppins;
-    line-height: 20px;
 }
 
 div::-webkit-scrollbar {
@@ -349,11 +349,11 @@ div::-webkit-scrollbar-thumb {
 
 .customerBg_img {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url("Images/clippedimage.jpg");
+    background-image: url("Images/clippedimage0.jpg");
 }
 
 .customerDesc {
@@ -614,15 +614,3 @@ div::-webkit-scrollbar-thumb {
         zoom: 30%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
