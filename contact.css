@@ -183,7 +183,7 @@ nav.scrolled .toggle a:hover {
 
 #direction div {
     display: flex;
-    margin-top: 20px;
+    margin-top: 0px;
     align-items: center;
     justify-content: center;
 }
@@ -214,8 +214,12 @@ nav.scrolled .toggle a:hover {
     background-color: rgb(42, 75, 175);
 }
 
+#communicate {
+    margin-top: 90px;
+}
+
 #card1, #card2 {
-    margin-top: 30px;
+    margin-top: 20px;
     max-width: 550px;
     min-height: 450px;
     border-radius: 10px;
@@ -309,44 +313,162 @@ nav.scrolled .toggle a:hover {
 }
 
 #message {
-    margin-top: 90px;
+    margin-top: 80px;
+}
+
+#reviews {
+    padding: 30px;
+    min-width: 100%;
+    margin-top: 15px;
+    margin-bottom: 100px;
+    background-color: royalblue;
+}
+
+#person {
+    padding: 0px;
+    max-width: 300px;
+    max-height: 350px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 3px 3px 5px #333;
+}
+
+#user {
+    padding: 15px;
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: linear-gradient(to right, black, royalblue);
+}
+
+#user p {
+    top: 3px;
+    color: white;
+    display: inline;
+    font-size: 17px;
+    margin-left: 5px;
+    position: relative;
+    font-family: Poppins;
+}
+
+#user span {
+    float: right;
+    color: white;
+    font-size: 10px;
+    margin-top: 25px;
+    font-family: Poppins;
+}
+
+#review span {
+    font-size: 12px;
+    margin-left: 3px;
+    color: darkgray;
+    font-family: Poppins;
+    text-decoration: underline;
+}
+
+#review {
+    padding: 30px;
+    display: block;
+    font-size: 15px;
+    min-height: 190px;
+    padding-bottom: 0px;
+    font-family: Poppins;
+}
+
+#review i {
+    color: gold;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+#likes {
+    padding: 30px;
+}
+
+#likes i {
+    font-size: 20px;
+    color: royalblue;
+}
+
+#likes p {
+    bottom: 2px;
+    color: gray;
+    display: inline; 
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    margin-right: 15px;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#links a {
+    display: flex;
+    color: white;
+    min-width: 100%;
+    font-size: 15px;
+    margin-right: 20px;
+    align-items: center;
+    font-family: Poppins;
+    justify-content: center;
 }
 
 #info {
-    margin-top: 15px;
-    padding: 20px 180px 40px;
-    background: linear-gradient(45deg, #333,royalblue, #333);
+    border: 0;
+    margin-top: 10px;
+    padding: 10px 180px 50px;
+    background-color: ghostwhite;
 }
 
 #comment-icon {
     display: flex; 
-    color: white;
     font-size: 130px;
+    color: royalblue;
     margin-bottom: 25px;
     justify-content: center;
 }
 
-#info input {
+#input1, #input2, #subject {
     width: 95%;
-    padding: 5px;
-    font-size: 18px;
+    padding: 8px;
+    font-size: 15px;
     margin-top: 20px;
     border-radius: 5px;
-    border: 2px solid lavender;
+    font-family: Poppins;
+    background-color: white;
+    border: 1px solid lightgray;
 }
 
-#comments {
-    width: 97.5%;
+#comments, #subject {
     resize: none;
+    padding: 7px;
     margin-top: 20px;
+    min-width: 97.5%;
     border-radius: 5px;
-    border-color: lightgray;
-    border: 2px solid lavender;
+    background-color: white;
+    border: 1px solid lightgray;
+
 }
 
-#info input:focus, #comments:focus {
+#input1:focus, #input2:focus, #subject:focus, #comments:focus {
     outline: none;
-    border-color: lightgray;
+    border: 1px solid darkgray;
+}
+
+.sendCmnt {
+    border: 0px;
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 10px;
+    min-width: 97.5%;
+    font-family: Poppins;
+    background-color: royalblue;
 }
 
 .customerBg_img {
@@ -514,12 +636,24 @@ nav.scrolled .toggle a:hover {
     #strip {
         background-color: whitesmoke;
     }
+    #communicate {
+        margin-top: 65px;
+    }
     nav.scrolled #strip {
         background-color: transparent;
     }
     #card1, #card2 {
-        margin-top: 20px;
+        margin-top: 5px;
         margin-bottom: 40px;
+    }
+    #reviews {
+        margin-bottom: 80px;
+    }
+    #info {
+        padding: 20px 50px 35px;
+    }
+    #input1, #input2, #subject, #comments, .sendCmnt {
+        width: 100%;
     }
     #message {
         margin-top: 40px;
@@ -538,12 +672,6 @@ nav.scrolled .toggle a:hover {
     }
     #direction {
         margin-bottom: 60px;
-    }
-    #info {
-        padding: 20px 50px 35px;
-    }
-    #info input {
-        width: 100%;
     }
     .customerDesc h2 {
         font-size: 30px;
@@ -568,5 +696,11 @@ nav.scrolled .toggle a:hover {
 @media only screen and (max-width: 250px) {
     body {
         zoom: 30%;
+    }
+}
+
+@media only screen and (max-width: 95px) {
+    body {
+        zoom: 15%;
     }
 }

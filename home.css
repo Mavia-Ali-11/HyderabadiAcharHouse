@@ -614,3 +614,9 @@ div::-webkit-scrollbar-thumb {
         zoom: 30%;
     }
 }
+
+@media only screen and (max-width: 95px) {
+    body {
+        zoom: 15%;
+    }
+}

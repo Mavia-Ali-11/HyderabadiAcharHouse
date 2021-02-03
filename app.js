@@ -11,10 +11,18 @@ function scrollFunction() {
     }
 }
 
+
+//////////////////////////////////////////////////////////////////////////////////////////// 
+
+
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+
+//////////////////////////////////////////////////////////////////////////////////////////// 
+
 
 function mySlider() {
   var slide1 = document.getElementById('slide1');
@@ -52,6 +60,10 @@ setInterval(
 }, 7000);
 }
 
+
+//////////////////////////////////////////////////////////////////////////////////////////// 
+
+
 var modal = document.getElementById("myModal");
 var modalImg = document.getElementById("modalImg");
 var captionText = document.getElementById("caption");
@@ -64,4 +76,25 @@ function openImage(img,caption) {
 
 function closeImg() {
   modal.style.display = 'none';
+}
+
+
+//////////////////////////////////////////////////////////////////////////////////////////// 
+
+
+function sendComments() {
+  var inp1 = document.getElementById('input1');
+  var inp2 = document.getElementById('input2');
+  var subject = document.getElementById('subject');
+  var commnets = document.getElementById('comments');
+  if((inp1.value == '') || (inp2.value == '') || (subject.value == '') || (commnets.value == '')) {
+    alert('First fill all the fields to post your comment!');
+  }
+  else {
+    inp1.value = '';
+    inp2.value = '';
+    subject.value = '';
+    commnets.value = '';
+    alert('Your comment has been recorded successfully!' + '\n' + 'You can also contact us through other provided channels.');
+  }
 }
