@@ -87,14 +87,11 @@ function sendComments() {
   var inp2 = document.getElementById('input2');
   var subject = document.getElementById('subject');
   var commnets = document.getElementById('comments');
-  if((inp1.value == '') || (inp2.value == '') || (subject.value == '') || (commnets.value == '')) {
-    alert('First fill all the fields to post your comment!');
-  }
-  else {
-    inp1.value = '';
-    inp2.value = '';
-    subject.value = '';
-    commnets.value = '';
-    alert('Your comment has been recorded successfully!' + '\n' + 'You can also contact us through other provided channels.');
-  }
+  if((inp1.value != '') && (inp2.value != '') && (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(inp2.value)) && (commnets.value != '')) {
+      inp1.value = '';
+      inp2.value = '';
+      subject.value = '';
+      commnets.value = '';
+      alert('Your comments has been recorded!' + '\n' + 'You can also contact us through other provided channels.');
+    }
 }

@@ -8,7 +8,7 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="contact.css">
-    <link rel="shortcut icon" href="Images/logo.Bv8fo7" type="image/x-icon">
+    <link rel="icon" href="Images/logo.Bv8fo7">
     <title>Hyderabadi Achar House</title>
 </head>
 
@@ -285,11 +285,13 @@
             <div class="container p-0 mt-3">
                 <div class="row " id="links" style="color: white;">
                     <div>
-                        <a href="https://www.google.com/maps/place/Hyderabadi+Achar+House/@24.8548968,67.0092325,17z/data=!4m7!3m6!1s0x3eb33f190f54165b:0xb60d7e8a20c190fb!8m2!3d24.8548919!4d67.0114212!9m1!1b1" target="_blank">see more reviews</a>
+                        <a href="https://www.google.com/maps/place/Hyderabadi+Achar+House/@24.8548968,67.0092325,17z/data=!4m7!3m6!1s0x3eb33f190f54165b:0xb60d7e8a20c190fb!8m2!3d24.8548919!4d67.0114212!9m1!1b1"
+                            target="_blank">see more reviews</a>
                     </div>
                     /
                     <div>
-                        <a href="https://www.google.com/maps/place/Hyderabadi+Achar+House/@24.8548919,67.0092325,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33f190f54165b:0xb60d7e8a20c190fb!8m2!3d24.8548919!4d67.0114212" target="_blank">write your review</a>
+                        <a href="https://www.google.com/maps/place/Hyderabadi+Achar+House/@24.8548919,67.0092325,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33f190f54165b:0xb60d7e8a20c190fb!8m2!3d24.8548919!4d67.0114212"
+                            target="_blank">write your review</a>
                     </div>
                 </div>
             </div>
@@ -312,25 +314,27 @@
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 p-0" id="comment-icon">
                         <i class="fa fa-commenting"></i>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                            <input id="input1" type="text" placeholder="Your Name">
+                    <form action="javascript:void(0)" autocomplete="off">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <input id="input1" type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                <input id="input2" type="email" placeholder="Your Email" required>
+                            </div>
                         </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                            <input id="input2" type="text" placeholder="Your Email">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <input id="subject" type="text" placeholder="Subject">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <textarea id="comments" rows="7" placeholder="Your Comments..." required></textarea>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                <input type="submit" class="btn btn-primary sendCmnt" onclick="sendComments()">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                            <input id="subject" type="text" placeholder="Subject">
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                            <textarea id="comments" rows="7" placeholder="Your Comments..."></textarea>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                            <button class="btn btn-primary sendCmnt" onclick="sendComments()">Send</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
