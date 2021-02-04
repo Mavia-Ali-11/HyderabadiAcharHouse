@@ -655,6 +655,9 @@ nav.scrolled .toggle a:hover {
     #input1, #input2, #subject, #comments, .sendCmnt {
         width: 100%;
     }
+    .sendCmnt { 
+        padding: 8px;
+    }
     #message {
         margin-top: 40px;
     }
