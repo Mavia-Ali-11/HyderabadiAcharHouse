@@ -98,7 +98,7 @@ nav.scrolled .toggle a:hover {
 }
 
 .slider {
-    height: 500px;
+    height: 550px;
     position: relative;
 }
 
@@ -453,7 +453,6 @@ nav.scrolled .toggle a:hover {
     border-radius: 5px;
     background-color: white;
     border: 1px solid lightgray;
-
 }
 
 #input1:focus, #input2:focus, #subject:focus, #comments:focus {
@@ -657,6 +656,7 @@ nav.scrolled .toggle a:hover {
     }
     .sendCmnt { 
         padding: 8px;
+        font-size: 15px;
     }
     #message {
         margin-top: 40px;

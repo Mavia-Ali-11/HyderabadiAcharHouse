@@ -98,7 +98,7 @@ nav.scrolled .toggle a:hover {
 }
 
 .slider {
-    height: 500px;
+    height: 550px;
     position: relative;
 }
 
@@ -131,7 +131,7 @@ nav.scrolled .toggle a:hover {
 }
 
 #heading {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     color: royalblue;
     font-family: PoppinsBold;
@@ -156,7 +156,7 @@ nav.scrolled .toggle a:hover {
 }
 
 #services i {
-    font-size: 100px;
+    font-size: 80px;
     color: royalblue;
 }
 
